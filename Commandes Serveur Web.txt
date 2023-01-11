@@ -20,3 +20,5 @@ share modes = yes
 quitter fichier
 systemctl restart apache2
 systemctl restart smbd
+smbpasswd -a <inserer username>
+<inserer 2x MDP>
