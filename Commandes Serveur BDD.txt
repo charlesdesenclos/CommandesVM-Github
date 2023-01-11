@@ -15,6 +15,7 @@ mysql_secure_installation
 apt install php php-mysql php-xml
 systemctl restart apache2
 apt install wget
+cd /var/www/html
 wget https://files.phpmyadmin.net/phpMyAdmin/5.2.0/phpMyAdmin-5.2.0-all-languages.tar.gz
 tar xvf phpMyAdmin-5.2.0-all-languages.tar.gz
 mysql -p
