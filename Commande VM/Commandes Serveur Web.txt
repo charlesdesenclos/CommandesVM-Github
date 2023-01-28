@@ -1,0 +1,24 @@
+serveur WEB
+
+apt update
+apt install apache2
+apt install samba samba-common-bin
+cd /etc/samba
+ip a
+noter l'interface
+nano smb.conf
+changer interface
+//à la fin mettre
+[PartageVM]
+path = /var/www/html
+writable = yes
+guest ok = no
+guest only = no
+create mode = 0777
+directory mode = 0777
+share modes = yes
+quitter fichier
+systemctl restart apache2
+systemctl restart smbd
+smbpasswd -a <inserer username>
+<inserer 2x MDP>
