@@ -22,3 +22,7 @@ systemctl restart apache2
 systemctl restart smbd
 smbpasswd -a <inserer username>
 <inserer 2x MDP>
+
+cd /etc/mysql/mariadb.conf.d
+nano 50-server.cnf
+bind-address = 0.0.0.0
