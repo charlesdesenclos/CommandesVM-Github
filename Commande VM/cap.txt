@@ -1,0 +1,9 @@
+Caméra : sony EVI-D30/D31
+
+Capteur CCD de ¼ pouce
+Résolution 470 lignes
+Intercommunication  RS-232C
+
+
+
+Carte interface K8055
