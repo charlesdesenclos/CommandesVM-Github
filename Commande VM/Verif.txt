@@ -68,3 +68,25 @@ fichier index .... à supprimer
 rm + non du fichier 
 
 Sur le site web retourner sur la page precedente puis ctrl F5 
+----------------------------------------
+Erreur SQL Mariadb 
+
+cd /etc/mysql/mariadb.conf.d
+nano 50-server.cnf
+
+bind-address            = 0.0.0.0
+
+Changement Port Base de Donnée 
+cd /etc/mysql
+nano mariadb.cnf
+
+socket = /run/mysqld/mysqld.sock
+
+# Import all .cnf files from configuration directory
+!includedir /etc/mysql/conf.d/
+!includedir /etc/mysql/mariadb.conf.d/
+port=3306
+
+
+
+
